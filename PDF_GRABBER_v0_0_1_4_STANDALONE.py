@@ -138,7 +138,7 @@ def download_pdf_from_link(link,FOLDER):
 ##########################################################################################################
 def DO_QUERY_FOR_GUI(query_string):
     url_endpoint = 'https://www.duckduckgo.com/html'
-    user_query = query_string[:-1]
+    user_query = query_string#[:-1]
     mydict = {'q': str("'"+str(user_query)+"'")}
     resp = requests.get(url_endpoint, params=mydict)
     try:
